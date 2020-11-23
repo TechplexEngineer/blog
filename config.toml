@@ -1,0 +1,5 @@
+baseURL = "https://techplexlabs.com/"
+languageCode = "en-us"
+title = "Techplex Labs"
+
+theme = "hyde-hyde"
