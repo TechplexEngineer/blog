@@ -1,7 +1,13 @@
 ---
-title: "What Are the Red Green Bars xLights"
+title: "What Are the Red Green Bars on effects in xLights"
 date: 2020-11-22T21:47:38-05:00
 draft: false
+
+author: "Blake Bourque"
+categories: [ "Holiday Lighting" ]
+tags: ["xlights", "til"]
+weight: 10
+
 ---
 
 While working on importing the 2020 xLights around the world sequence "Into the Unknown" we noticed the red and green bars on some effects in the sequence. They look like this:
@@ -15,10 +21,4 @@ Here is a sample effect with a fade transition in:
 ![xlights transition fade in](xlights-transition-in.png)
 
 Here is a sample effect with a fade transition out:
-![xlights transition fade out](xlights-transition-bars.png)
-
-#til
-
-
-
-
+![xlights transition fade out](xlights-transition-out.png)
