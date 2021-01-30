@@ -10,7 +10,7 @@ submod: ## if you forgot to "git clone --recursive", this fetches submodules
 	git submodule update --init
 
 .PHONY: server
-server: hugosvr openbrowser
+server: hugosvr openbrowser ## run the dev server and start browser
 
 .PHONY: hugosvr
 hugosvr:
