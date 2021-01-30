@@ -6,17 +6,17 @@ categories : [ "reverse engineering" ]
 draft: false
 ---
 
-I recently purchased a reMarkable 2 e-ink tablet with th goal of modernizing my note-taking process. My end goal is to make my handwritten notes searchable.
+I recently purchased a reMarkable 2 e-ink tablet with the goal of modernizing my note-taking process. My end goal is to make my handwritten notes searchable.
 
 It seems the reMarkable is doing some sort of line simplification before sending the raw x, y coordinates to the [MyScript Handwriting Recognition Service (HWR) service.](https://developer.myscript.com/getting-started)
 
-The following images show initial plotting of the line segements from the binary lines files vs the data sent by the tablet to the HWR service:
+The following images show initial plotting of the line segments from the binary lines files vs the data sent by the tablet to the HWR service:
 
 ![Full Page](full-page-compare.png)
 ![Zoom in on Handwriting](handwriting-compare.png)
 ![Zoom in on Hand](hand-compare.png)
 
-Theese images show the difference between the raw data and what the tablet is sending to the HWR service.
+These images show the difference between the raw data and what the tablet is sending to the HWR service.
 
 The above images were generated with matplotlib, here is the script:
 ```python
@@ -52,7 +52,7 @@ Initial searching took me to [this Stack Overflow post](https://stackoverflow.co
 
 The example Mike Bostock made showing the use of an algorithm for cartographic simplification, [be sure to check out this demo](https://bost.ocks.org/mike/simplify/).
 
-Mike's demo took me to the [Wikipedia entry for the Ramer Douglas Peucker](https://en.wikipedia.org/wiki/Ramer%E2%80%93Douglas%E2%80%93Peucker_algorithm#Pseudocode) (RDP) algorithm. Just below the psuedocode there is a link to a great [demo by Marius Karthaus](https://karthaus.nl/rdp/) which is worth playing with. By playing with Marius' demo I became convinced that the RDP algorithm warraned some testing.
+Mike's demo took me to the [Wikipedia entry for the Ramer Douglas Peucker](https://en.wikipedia.org/wiki/Ramer%E2%80%93Douglas%E2%80%93Peucker_algorithm#Pseudocode) (RDP) algorithm. Just below the psuedocode there is a link to a great [demo by Marius Karthaus](https://karthaus.nl/rdp/) which is worth playing with. By playing with Marius' demo I became convinced that the RDP algorithm warranted some testing.
 
 Expanding on the script from above to add a third subplot using the RDP algorithm to filter the points.
 
@@ -120,4 +120,4 @@ if __name__ == '__main__':
 
 Link to sample of [raw.json](raw.json) and here is [tablet.json](tablet.json)
 
-By visual inspection it appears the RDP with epsalon of 10 achieves the desired goal of closely matching the tablet-generated set of points.
+By visual inspection it appears the RDP with epsilon of 10 achieves the desired goal of closely matching the tablet-generated set of points.

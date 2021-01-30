@@ -9,7 +9,8 @@ tags: ["xlights", "til", "xatw"]
 While working on importing the 2020 xLights around the world sequence "Into the Unknown" we noticed the red and green bars on some effects in the sequence. They look like this:
 ![showing effects in xlights with red and green fade bars](xlights-transition-bars.png)
 
-After some prodding we dicovered the red line means transition out, whereas the green line indicates a transition in. 
+After some prodding we discovered the red line means transition out, whereas the green line indicates a transition in.
+
 
 To create or edit a transition the controls on the Layer Blending menu.
 
