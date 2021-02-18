@@ -42,7 +42,7 @@ done
 flock /tmp/mylock rm /tmp/mylock
 ```
 
-On line 9 above, flock command invokes `canRun.sh`cd p which is listed below
+On line 9 above, flock command invokes `canRun.sh` which is listed below
 
 ```bash {linenos=table,anchorlinenos=true}
 #!/bin/bash
