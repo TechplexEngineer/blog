@@ -42,8 +42,8 @@ theme = "hyde-hyde"
     # showBuiltWith = true
 
     # https://highlightjs.org
-    highlightjs = true
-    highlightjsstyle = "github"
+    highlightjs = false
+    highlightjsstyle = "monokai-sublime"
     
     # please choose either GraphComment or Disqus or Utterances
     #GraphCommentId = "..."
@@ -58,3 +58,9 @@ theme = "hyde-hyde"
 	github = "TechplexEngineer"
 	# twitter = "TechplexEng"
 	linkedin = "blakebourque"
+
+[markup.highlight]
+  lineNos = true
+  lineNumbersInTable = true
+  noClasses = false
+
