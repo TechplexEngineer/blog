@@ -2,7 +2,7 @@
 title: "Remarkable Line Simplification"
 date: 2021-01-30T13:17:49-05:00
 tags : [ "remarkable" ]
-categories : [ "reverse engineering" ]
+categories : [ "Reverse Engineering" ]
 draft: false
 ---
 
